@@ -18,8 +18,8 @@ const GeneralChatScreen = ({ onBack }) => {
     setMessages([...messages, userMessage]);
 
     try {
-      const apiKey = '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'; // Replace with your OpenAI API key
-      const apiUrl = 'https://api.openai.com/v1/engines/davinci/completions';
+      const apiKey = 'sk-jRBPNycyyfdsf8WA0jUZNX'; // Replace with your OpenAI API key
+      const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-001/completions';
 
       const response = await axios.post(
         apiUrl,
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    justifyContent: 'flex-end', // Move the chat to the bottom
+    justifyContent: 'flex-end',
   },
   userMessage: {
     backgroundColor: 'lightblue',
@@ -118,8 +118,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 20,
-    justifyContent: 'center', // Center the button vertically
-    alignItems: 'center', // Center the button horizontally
+    justifyContent: 'center', 
+    alignItems: 'center', 
   },
   sendButtonText: {
     color: 'white',
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 20,
     marginTop: 10,
-    alignSelf: 'center', // Center the button horizontally
+    alignSelf: 'center',
   },
   buttonText: {
     color: 'white',

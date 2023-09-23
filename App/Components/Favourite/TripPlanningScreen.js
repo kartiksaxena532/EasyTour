@@ -9,18 +9,17 @@ const TripPlanningScreen = ({ onBack }) => {
   const [tripSuggestions, setTripSuggestions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const apiKey = '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';
-  const apiUrl = 'https://api.openai.com/v1/engines/davinci/completions';
+  const apiKey = "sk-ESeLkA xyz a6Keo4O8D";
+  const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
 
   const handleNext = async () => {
-    // Validate user inputs (e.g., check if all fields are filled)
-    if (!days || !location) {
+    
+    if (!days || !location || !budget) {
       alert('Please fill in all fields');
       return;
     }
 
-    // Construct a prompt for OpenAI based on user input
-    const prompt = `Plan a trip for ${days} days to ${location}s. Suggest some places to visit there in a list.`;
+    const prompt = `I want to go on a ${days} day trip to ${location} and my budget is ${budget} ruppees. Here are some places to visit in a :\n\n`;
 
     setIsLoading(true);
 
@@ -29,7 +28,7 @@ const TripPlanningScreen = ({ onBack }) => {
         apiUrl,
         {
           prompt: prompt,
-          max_tokens: 100,
+          max_tokens: 1024,
         },
         {
           headers: {
@@ -70,6 +69,12 @@ const TripPlanningScreen = ({ onBack }) => {
         value={location}
         onChangeText={setLocation}
       />
+      <TextInput
+        style={styles.input}
+        placeholder="Budget"
+        value={budget}
+        onChangeText={setBudget}
+      />
 
       <TouchableOpacity onPress={handleNext} style={styles.button}>
         <Text style={styles.buttonText}>Next</Text>
@@ -78,14 +83,16 @@ const TripPlanningScreen = ({ onBack }) => {
       {isLoading && <Text style={styles.loadingText}>Loading suggestions...</Text>}
 
       {tripSuggestions.length > 0 && (
-        <View style={styles.suggestionsContainer}>
-          <Text style={styles.suggestionsHeader}>Trip Suggestions:</Text>
-          {tripSuggestions.map((suggestion, index) => (
-            <Text key={index} style={styles.suggestion}>
-              {suggestion}
-            </Text>
-          ))}
-        </View>
+        <ScrollView>
+          <View style={styles.suggestionsContainer}>
+            <Text style={styles.suggestionsHeader}>Trip Suggestions:</Text>
+            {tripSuggestions.map((suggestion, index) => (
+              <Text key={index} style={styles.suggestion}>
+                {suggestion}
+              </Text>
+            ))}
+          </View>
+        </ScrollView>
       )}
 
       <TouchableOpacity onPress={onBack} style={styles.backButton}>
