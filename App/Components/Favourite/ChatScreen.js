@@ -7,7 +7,7 @@ const ChatScreen = () => {
   const [inputMessage, setInputMessage] = useState('');
   const [messages, setMessages] = useState([]);
 
-  const apiKey = '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';
+  const apiKey = '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';
   const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
   const sendMessageToChatbot = async () => {
