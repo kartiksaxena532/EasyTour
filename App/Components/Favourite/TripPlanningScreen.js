@@ -9,7 +9,7 @@ const TripPlanningScreen = ({ onBack }) => {
   const [tripSuggestions, setTripSuggestions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const apiKey = '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';
+  const apiKey = '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';
   const apiUrl = 'https://api.openai.com/v1/engines/davinci/completions';
 
   const handleNext = async () => {
@@ -20,7 +20,9 @@ const TripPlanningScreen = ({ onBack }) => {
     }
 
     // Construct a prompt for OpenAI based on user input
-    const prompt = `Plan a trip for ${days} days to ${location}s. Suggest some places to visit there in a list.`;
+    // const prompt = `I am Planning a trip for ${days} days to ${location}s. Suggest some places to visit ${location} in a list.`;
+
+    const prompt = `places to visit in ${location}`;
 
     setIsLoading(true);
 
