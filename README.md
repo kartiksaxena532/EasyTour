@@ -1,12 +1,16 @@
-# Easy Tour
+# EASY TOUR
+![Frame 1](https://github.com/vaanyasharmaaa/EasyTour/assets/130481025/ce278063-b0b4-40a0-ad7f-ddf1fd3a1786)
 
-It a travel buddy app built using react native framework. It Provides us with the nearest hotels and cafes in the time of need.
-You can add to favourite the hotels you like for future trips.
+It is the travel buddy app built fully on react native framework.
+With real time map syncing and locating the nearest hotels,cafes,gas stations.
+Uses OPENAI_API_KEY to fetch the data using the prompt you entered in the app.
+It has a user friendly interface as well as user interactive interface. 
+It provides us with the information of nearest hotels, cafes, resturants, gas stations, etc  to your nearest area.
+You can add your favourite  hotels you like for future trips.
 
 
 
 -[@varsha-singh17](https://www.github.com/varsha-singh17)
--[@HiLakshya](https://www.github.com/HiLakshya)
 ## Appendix
 
 Any additional information goes here
@@ -20,23 +24,20 @@ Any additional information goes here
 | Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
 | Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
-
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`GOOGLE_PLACE_API_KEY`
 
-`ANOTHER_API_KEY`
+`OPENAI_API_KEY`
 
+## Deployment
+To run this code following are the steps to be done:
+1. Download the Source code.
+2. In your code editor terminal type as follows
+    (i) npm i
+    (ii)npm start
 
-
+4. After that the QR will be generated on the screen.
+5. Scan the QR code on Expo Go App on Android device and   Camera app on the IOS device.

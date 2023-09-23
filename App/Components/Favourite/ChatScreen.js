@@ -4,16 +4,36 @@ import TripPlanningScreen from './TripPlanningScreen';
 import GeneralChatScreen from './GeneralChatScreen';
 
 const ChatScreen = () => {
-  const [chatMode, setChatMode] = useState(null); 
+  const [inputMessage, setInputMessage] = useState('');
+  const [messages, setMessages] = useState([]);
 
+  const apiKey = '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';
+  const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
-  const startTripPlanning = () => {
-    setChatMode('tripPlanning');
-  };
+  const sendMessageToChatbot = async () => {
+    if (inputMessage.trim() === '') return;
 
+    try {
+      const response = await axios.post(
+        apiUrl,
+        {
+          prompt: inputMessage,
+          max_tokens: 50,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+        }
+      );
 
-  const startGeneralChat = () => {
-    setChatMode('generalChat');
+      const botResponse = response.data.choices[0].text;
+      setMessages([...messages, { text: inputMessage, user: true }, { text: botResponse, user: false }]);
+      setInputMessage('');
+    } catch (error) {
+      console.error('Error sending message to chatbot:', error);
+    }
   };
 
   return (

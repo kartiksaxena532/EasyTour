@@ -63,18 +63,11 @@ yarn.lock
 config.js
 secrets.json
 *.key
-*.pem
+*.mobileprovision
+*.orig.*
+web-build/
 
-# Ignore logs and temporary files
-*.log
-*.log.*
-*.tmp
-*.swp
-*.bak
-*.backup
-*.old
-
-# Ignore operating system files
+# macOS
 .DS_Store
 Thumbs.db
 
