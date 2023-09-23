@@ -4,6 +4,7 @@ import React, { useState } from 'react';
    import DateTimePicker from '@react-native-community/datetimepicker';
 import Button from '../Components/Profile/button';
 
+<<<<<<< HEAD
    const ProfileScreen = () => {
      const [name, setName] = useState('Kartik');
      const [email, setEmail] = useState('Kartik@example.com');
@@ -12,6 +13,9 @@ import Button from '../Components/Profile/button';
      const [batch,setBatch] =useState('2025');
      const [isEditing, setIsEditing] = useState(false);
      const [pincode, setPincode] = useState('201309');
+=======
+   <Text style={tw`text-5`}>Welcome ,<Text style={tw`text-10`}>Lakshya</Text></Text>   
+>>>>>>> 6f6f14bb347a821c28f1ffc4a25ae91b7716a033
 
      const handleSave = () => {
        // Save the user's profile information (e.g., to a server or storage)

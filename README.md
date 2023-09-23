@@ -6,6 +6,12 @@ It has a user friendly interface as well as user interactive interface.
 It provides us with the information of nearest hotels, cafes, resturants, gas stations, etc  to your nearest area.
 You can add your favourite  hotels you like for future trips.
 
+<<<<<<< HEAD
+=======
+
+-[@varsha-singh17](https://www.github.com/varsha-singh17)
+-[@HiLakshya](https://www.github.com/HiLakshya)
+>>>>>>> 6f6f14bb347a821c28f1ffc4a25ae91b7716a033
 ## Appendix
 
 Any additional information goes here
