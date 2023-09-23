@@ -16,7 +16,7 @@ export default function Profiles() {
     <Text style={{fontSize:30, color:'orange'}}>Profile</Text>
     </View>
 
-   <Text style={tw`text-5`}>Welcome ,<Text style={tw`text-10`}>Kartik Saxena</Text></Text>   
+   <Text style={tw`text-5`}>Welcome ,<Text style={tw`text-10`}>Lakshya</Text></Text>   
 
    </View>
   )
