@@ -18,14 +18,18 @@ const GeneralChatScreen = ({ onBack }) => {
     setMessages([...messages, userMessage]);
 
     try {
+<<<<<<< HEAD
       const apiKey = 'sk-jRBPNycyyfdsf8WA0jUZNX'; // Replace with your OpenAI API key
+=======
+      const apiKey = 'enter api key'; // Replace with your OpenAI API key
+>>>>>>> 685b4ec02fd361be5073a901d56be7c1ab0311b0
       const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-001/completions';
 
       const response = await axios.post(
         apiUrl,
         {
           prompt: textInput,
-          max_tokens: 50,
+          max_tokens: 100,
         },
         {
           headers: {
