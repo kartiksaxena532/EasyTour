@@ -3,18 +3,7 @@ import React from 'react'
 import Header1 from '../Components/Favourite/Header1'
 import { LinearGradient } from "expo-linear-gradient";
 import Colors from "../Shared/Colors";
-// import { createAppContainer } from 'react-navigation';
-// import { createStackNavigator } from 'react-navigation-stack';
-// import ChatScreen from './ChatScreen';
 
-// const AppNavigator = createStackNavigator(
-//   {
-//     Chat: ChatScreen,
-//   },
-//   {
-//     initialRouteName: 'Chat',
-//   }
-// );
 
 export default function Fav() {
   return (
