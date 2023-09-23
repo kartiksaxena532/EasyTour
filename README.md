@@ -8,10 +8,12 @@ It has a user friendly interface as well as user interactive interface.
 It provides us with the information of nearest hotels, cafes, resturants, gas stations, etc  to your nearest area.
 You can add your favourite  hotels you like for future trips.
 
-## Features
-* In-app GPS technology
-* Virtual assistant to help you plan trip
-* Suggestions for near-by cafes, gas stations etc
+
+
+-[@varsha-singh17](https://www.github.com/varsha-singh17)
+## Appendix
+
+Any additional information goes here
 
 ## Color Reference
 

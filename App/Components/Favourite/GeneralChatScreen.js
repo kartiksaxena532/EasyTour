@@ -1,0 +1,146 @@
+import React, { useState, useEffect } from 'react';
+import { View, Text, TextInput, TouchableOpacity, FlatList, StyleSheet, KeyboardAvoidingView } from 'react-native';
+import axios from 'axios';
+
+const GeneralChatScreen = ({ onBack }) => {
+  const [messages, setMessages] = useState([]);
+  const [textInput, setTextInput] = useState('');
+
+  useEffect(() => {
+    const botResponse = { text: 'Disha👩‍💻: Hello! How can I assist you with your trip?' };
+    setMessages([...messages, botResponse]);
+  }, []);
+
+  const handleSend = async () => {
+    if (textInput.trim() === '') return;
+
+    const userMessage = { text: textInput, user: true };
+    setMessages([...messages, userMessage]);
+
+    try {
+<<<<<<< HEAD
+      const apiKey = 'sk-jRBPNycyyfdsf8WA0jUZNX'; // Replace with your OpenAI API key
+=======
+      const apiKey = 'enter api key'; // Replace with your OpenAI API key
+>>>>>>> 685b4ec02fd361be5073a901d56be7c1ab0311b0
+      const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-001/completions';
+
+      const response = await axios.post(
+        apiUrl,
+        {
+          prompt: textInput,
+          max_tokens: 100,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`,
+          },
+        }
+      );
+
+      const botResponse = { text: `Disha👩‍💻: ${response.data.choices[0].text}` };
+      setMessages([...messages, botResponse]);
+    } catch (error) {
+      console.error('Error sending message to OpenAI:', error);
+    }
+
+    setTextInput('');
+  };
+
+  return (
+    <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
+      <FlatList
+        data={messages}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+          <View style={item.user ? styles.userMessage : styles.botMessage}>
+            <Text style={styles.messageText}>{item.text}</Text>
+          </View>
+        )}
+      />
+      <View style={styles.inputContainer}>
+        <TextInput
+          style={styles.input}
+          value={textInput}
+          onChangeText={(text) => setTextInput(text)}
+          placeholder="Type your message..."
+        />
+        <TouchableOpacity onPress={handleSend} style={styles.sendButton}>
+          <Text style={styles.sendButtonText}>Send</Text>
+        </TouchableOpacity>
+      </View>
+
+      <TouchableOpacity onPress={onBack} style={styles.backButton}>
+        <Text style={styles.buttonText}>Back to Start</Text>
+      </TouchableOpacity>
+    </KeyboardAvoidingView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    justifyContent: 'flex-end',
+  },
+  userMessage: {
+    backgroundColor: 'lightblue',
+    alignSelf: 'flex-end',
+    padding: 10,
+    margin: 5,
+    borderRadius: 10,
+  },
+  botMessage: {
+    backgroundColor: 'lightgreen',
+    alignSelf: 'flex-start',
+    padding: 10,
+    margin: 5,
+    borderRadius: 10,
+  },
+  messageText: {
+    fontSize: 16,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderTopWidth: 1,
+    borderColor: '#CCC',
+    paddingVertical: 10,
+    paddingHorizontal: 5,
+  },
+  input: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: '#CCC',
+    borderRadius: 20,
+    paddingHorizontal: 10,
+    marginRight: 10,
+  },
+  sendButton: {
+    backgroundColor: 'red',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 20,
+    justifyContent: 'center', 
+    alignItems: 'center', 
+  },
+  sendButtonText: {
+    color: 'white',
+    fontSize: 16,
+  },
+  backButton: {
+    backgroundColor: 'gray',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 20,
+    marginTop: 10,
+    alignSelf: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+  },
+});
+
+export default GeneralChatScreen;
