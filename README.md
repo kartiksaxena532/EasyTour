@@ -23,9 +23,9 @@ Any additional information goes here
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`GOOGLE_PLACE_API_KEY`
 
-`ANOTHER_API_KEY`
+`OPENAI_API_KEY`
 
 ## Deployment
 To run this code following are the steps to be done:
@@ -34,5 +34,6 @@ To run this code following are the steps to be done:
     (i) npm i
     (ii)npm start
 
-3. After that the QR will be generated on the screen.
-4. Scan the QR code on Expo Go App on Android device and   Camera app on the IOS device.     
+4. After that the QR will be generated on the screen.
+5. Scan the QR code on Expo Go App on Android device and   Camera app on the IOS device.
+
