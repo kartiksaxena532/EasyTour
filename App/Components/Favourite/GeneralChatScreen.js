@@ -25,7 +25,7 @@ const GeneralChatScreen = ({ onBack }) => {
         apiUrl,
         {
           prompt: textInput,
-          max_tokens: 50,
+          max_tokens: 100,
         },
         {
           headers: {
