@@ -6,6 +6,7 @@ You can add to favourite the hotels you like for future trips.
 
 
 -[@varsha-singh17](https://www.github.com/varsha-singh17)
+-[@HiLakshya](https://www.github.com/HiLakshya)
 ## Appendix
 
 Any additional information goes here
