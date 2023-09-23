@@ -1,5 +1,3 @@
-# EasyTour
-
 # Easy Tour
 
 It a travel buddy app built using react native framework. It Provides us with the nearest hotels and cafes in the time of need.
