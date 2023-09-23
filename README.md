@@ -7,24 +7,6 @@ It provides us with the information of nearest hotels, cafes, resturants, gas st
 You can add your favourite  hotels you like for future trips.
 
 
-
--[@varsha-singh17](https://www.github.com/varsha-singh17)
-## Appendix
-
-Any additional information goes here
-
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
-
-## Deployment
-
 ## Deployment
 To run this code following are the steps to be done:
 1. Download the Source code.
@@ -34,15 +16,3 @@ To run this code following are the steps to be done:
 
 3. After that the QR will be generated on the screen.
 4. Scan the QR code on Expo Go App on Android device and   Camera app on the IOS device.     
-
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-
-
