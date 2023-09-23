@@ -19,6 +19,8 @@ export default function Header1() {
         <Image source={require('./../../../assets/kartik.jpg.jpeg')} 
             style={styles.userImage}
         /> 
+
+        
     </View>
   )
 }
