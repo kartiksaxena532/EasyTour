@@ -9,13 +9,8 @@ const TripPlanningScreen = ({ onBack }) => {
   const [tripSuggestions, setTripSuggestions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-<<<<<<< HEAD
-  const apiKey = "sk-ESeLkA xyz a6Keo4O8D";
+  const apiKey = "sk-XRVn4HNHelloMCrd5ycVZpjt";
   const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
-=======
-  const apiKey = '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';
-  const apiUrl = 'https://api.openai.com/v1/engines/davinci/completions';
->>>>>>> 685b4ec02fd361be5073a901d56be7c1ab0311b0
 
   const handleNext = async () => {
     
@@ -24,14 +19,7 @@ const TripPlanningScreen = ({ onBack }) => {
       return;
     }
 
-<<<<<<< HEAD
     const prompt = `I want to go on a ${days} day trip to ${location} and my budget is ${budget} ruppees. Here are some places to visit in a :\n\n`;
-=======
-    // Construct a prompt for OpenAI based on user input
-    // const prompt = `I am Planning a trip for ${days} days to ${location}s. Suggest some places to visit ${location} in a list.`;
-
-    const prompt = `places to visit in ${location}`;
->>>>>>> 685b4ec02fd361be5073a901d56be7c1ab0311b0
 
     setIsLoading(true);
 
