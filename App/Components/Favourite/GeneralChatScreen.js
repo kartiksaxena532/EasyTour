@@ -18,18 +18,14 @@ const GeneralChatScreen = ({ onBack }) => {
     setMessages([...messages, userMessage]);
 
     try {
-<<<<<<< HEAD
-      const apiKey = 'sk-jRBPNycyyfdsf8WA0jUZNX'; // Replace with your OpenAI API key
-=======
-      const apiKey = 'enter api key'; // Replace with your OpenAI API key
->>>>>>> 685b4ec02fd361be5073a901d56be7c1ab0311b0
+      const apiKey = 'sk-XRVn4HHEllo1rKHsGJMCrd5ycVZpjt'; // Replace with your OpenAI API key
       const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-001/completions';
 
       const response = await axios.post(
         apiUrl,
         {
           prompt: textInput,
-          max_tokens: 100,
+          max_tokens: 50,
         },
         {
           headers: {
@@ -82,7 +78,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-end', // Move the chat to the bottom
   },
   userMessage: {
     backgroundColor: 'lightblue',
@@ -122,8 +118,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 20,
-    justifyContent: 'center', 
-    alignItems: 'center', 
+    justifyContent: 'center', // Center the button vertically
+    alignItems: 'center', // Center the button horizontally
   },
   sendButtonText: {
     color: 'white',
@@ -135,7 +131,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 20,
     marginTop: 10,
-    alignSelf: 'center',
+    alignSelf: 'center', // Center the button horizontally
   },
   buttonText: {
     color: 'white',
