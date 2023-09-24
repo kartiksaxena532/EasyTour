@@ -30,6 +30,17 @@ To run this project, you will need to add the following environment variables to
 
 `OPENAI_API_KEY`
 
+## Demo and Live Link
+
+![Frame 2](https://github.com/HiLakshya/EasyTour/blob/master/assets/QREasyTour.jpg?raw=true)
+
+[![Video](http://img.youtube.com/vi/0VaS0zBiVt4/0.jpg)](http://www.youtube.com/watch?v=0VaS0zBiVt4)
+
+
+
+
+
+
 ## Deployment
 To run this code following are the steps to be done:
 1. Download the Source code.
