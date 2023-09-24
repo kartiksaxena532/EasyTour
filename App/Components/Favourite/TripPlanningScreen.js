@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import axios from 'axios';
 
-const TripPlanningScreen = ({ onBack }) => {
+const TripPlanningScreen = ({ history }) => {
   const [days, setDays] = useState('');
   const [location, setLocation] = useState('');
   const [budget, setBudget] = useState('');
   const [tripSuggestions, setTripSuggestions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const apiKey = "sk-XRVn4HNHelloMCrd5ycVZpjt";
+  const apiKey = "sk-RGMxpZqk7n36Su0DshLAKSHYA2LT3BlbkFJ8b9amlodfhTnLKHiNFci";
   const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
 
   const handleNext = async () => {
@@ -95,7 +95,7 @@ const TripPlanningScreen = ({ onBack }) => {
         </ScrollView>
       )}
 
-      <TouchableOpacity onPress={onBack} style={styles.backButton}>
+      <TouchableOpacity onPress={history} style={styles.backButton}>
         <Text style={styles.buttonText}>Back to Start</Text>
       </TouchableOpacity>
     </ScrollView>

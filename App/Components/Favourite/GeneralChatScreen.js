@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, FlatList, StyleSheet, KeyboardAvoidingView } from 'react-native';
 import axios from 'axios';
 
-const GeneralChatScreen = ({ onBack }) => {
+const GeneralChatScreen = ({ history }) => {
   const [messages, setMessages] = useState([]);
   const [textInput, setTextInput] = useState('');
 
@@ -20,7 +20,7 @@ const GeneralChatScreen = ({ onBack }) => {
     // committing without api key
     // model chosen test-davinci-001
     try {
-      const apiKey = 'sk-XRVn4HHEllo1rKHsGJMCrd5ycVZpjt'; // Replace with your OpenAI API key
+      const apiKey = 'sk-RGMxpZqk7n36Su0Dsh2LT3BlbkFJ8b9amlodfhTnLAKSHYALKHiNFci'; // Replace with your OpenAI API key
       const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-001/completions';
 
       const response = await axios.post(
@@ -69,7 +69,7 @@ const GeneralChatScreen = ({ onBack }) => {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity onPress={onBack} style={styles.backButton}>
+      <TouchableOpacity onPress={history} style={styles.backButton}>
         <Text style={styles.buttonText}>Back to Start</Text>
       </TouchableOpacity>
     </KeyboardAvoidingView>

@@ -12,9 +12,7 @@ export default function Header1() {
             style={styles.logo}/>
 
         <View>
-            <TextInput placeholder='Search Your Favourites' 
-                style={styles.searchBar}
-            />
+            <Text style={{fontSize:25,color:'gray'}}>Do You Have A Query?</Text>
         </View>  
         <Image source={require('./../../../assets/kartik.jpg.jpeg')} 
             style={styles.userImage}

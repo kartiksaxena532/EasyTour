@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image} from 'react-native';
 import TripPlanningScreen from './TripPlanningScreen';
 import GeneralChatScreen from './GeneralChatScreen';
+import Button from '../Favourite/button2';
 
 const ChatScreen = () => {
   const [chatMode, setChatMode] = useState(null); 
@@ -30,8 +31,8 @@ const ChatScreen = () => {
           <Text style={styles.botIntroText}>Hi, I'm Disha!</Text>
           <Text style={styles.botText}>How can I assist you today?</Text>
           <Text style={styles.botText}>Choose an option:</Text>
-          <Text style={styles.option} onPress={startTripPlanning}>1. Plan My Trip</Text>
-          <Text style={styles.option} onPress={startGeneralChat}>2. Suggest Me Places</Text>
+          <Button style={styles.option} onPress={startTripPlanning} title=" Plan My Trip "/>
+          <Button style={styles.option} onPress={startGeneralChat} title=" Suggest Me Places "/>
         </View>
       )}
     </View>
@@ -43,6 +44,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+
   },
   botContainer: {
     alignItems: 'center',
@@ -53,19 +55,23 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   botIntroText: {
-    fontSize: 24,
-    fontWeight: 'bold',
+    fontSize: 35,
+    fontWeight: 'Bold',
     marginBottom: 10,
   },
   botText: {
-    fontSize: 18,
+    fontSize: 20,
     marginBottom: 10,
+    fontWeight:'semibold',
+    color:'gray'
+
   },
   option: {
     color: 'blue',
     fontSize: 16,
-    textDecorationLine: 'underline',
     marginBottom: 10,
+    paddingTop:10,
+    paddingHorizontal:10,
   },
 });
 

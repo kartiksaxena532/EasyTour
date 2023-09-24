@@ -32,7 +32,7 @@ export default function TabNavigation() {
        options={{
         tabBarLabel: 'Plan',
         tabBarIcon: ({ color, size }) => (
-          <Ionicons name="ios-heart" color={color} size={size} />
+          <Ionicons name="ios-map" color={color} size={size} />
         ),
       }} />
       <Tab.Screen name="Profile" component={Profiles} 
