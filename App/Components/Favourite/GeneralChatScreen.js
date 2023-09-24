@@ -17,6 +17,8 @@ const GeneralChatScreen = ({ onBack }) => {
     const userMessage = { text: textInput, user: true };
     setMessages([...messages, userMessage]);
 
+    // committing without api key
+    // model chosen test-davinci-001
     try {
 <<<<<<< HEAD
       const apiKey = 'sk-jRBPNycyyfdsf8WA0jUZNX'; // Replace with your OpenAI API key
