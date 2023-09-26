@@ -19,7 +19,6 @@ You can add your favorite  hotels you like for future trips.
 <img src="https://github.com/kartiksaxena532/EasyTour/assets/92146206/4bc78f9a-8cc9-48a0-86e1-c5e9ea940f15" width ="260" height="540">
 <img src="https://github.com/kartiksaxena532/EasyTour/assets/92146206/7482e191-980f-4f01-a373-567c30203463" width ="260" height="540">
 <img src="https://github.com/kartiksaxena532/EasyTour/assets/92146206/337b3c06-4472-445c-b081-70521b8ac073" width ="260" height="540">
-<img src="https://github.com/kartiksaxena532/EasyTour/assets/92146206/562d85fe-46bd-4ab1-a09c-1f0233cc775e" width ="260" height="540">
 
 
 
