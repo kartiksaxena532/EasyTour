@@ -13,7 +13,7 @@ You can add your favourite  hotels you like for future trips.
 * In-app GPS technology
 * Virtual assistant to help you plan trip
 * Suggestions for near-by cafes, gas stations etc
-![WhatsApp Image 2023-09-24 at 01 09 10](https://github.com/kartiksaxena532/EasyTour/assets/92146206/562d85fe-46bd-4ab1-a09c-1f0233cc775e)
+<img src="https://github.com/kartiksaxena532/EasyTour/assets/92146206/562d85fe-46bd-4ab1-a09c-1f0233cc775e" width ="260" height="540">
 ![WhatsApp Image 2023-09-24 at 01 09 11](https://github.com/kartiksaxena532/EasyTour/assets/92146206/3bc3e769-c404-4f68-ba63-71336bd0e451)
 ![WhatsApp Image 2023-09-24 at 01 09 11 (1)](https://github.com/kartiksaxena532/EasyTour/assets/92146206/db08ce02-7cbc-4cc7-bd5c-5ccd666c0bdc)
 ![WhatsApp Image 2023-09-24 at 01 09 11 (2)](https://github.com/kartiksaxena532/EasyTour/assets/92146206/6442fa1a-dd06-4d84-a587-c768c7665157)
