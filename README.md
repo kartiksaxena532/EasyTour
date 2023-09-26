@@ -13,6 +13,13 @@ You can add your favourite  hotels you like for future trips.
 * In-app GPS technology
 * Virtual assistant to help you plan trip
 * Suggestions for near-by cafes, gas stations etc
+![WhatsApp Image 2023-09-24 at 01 09 10](https://github.com/kartiksaxena532/EasyTour/assets/92146206/562d85fe-46bd-4ab1-a09c-1f0233cc775e)
+![WhatsApp Image 2023-09-24 at 01 09 11](https://github.com/kartiksaxena532/EasyTour/assets/92146206/3bc3e769-c404-4f68-ba63-71336bd0e451)
+![WhatsApp Image 2023-09-24 at 01 09 11 (1)](https://github.com/kartiksaxena532/EasyTour/assets/92146206/db08ce02-7cbc-4cc7-bd5c-5ccd666c0bdc)
+![WhatsApp Image 2023-09-24 at 01 09 11 (2)](https://github.com/kartiksaxena532/EasyTour/assets/92146206/6442fa1a-dd06-4d84-a587-c768c7665157)
+![WhatsApp Image 2023-09-24 at 01 09 12](https://github.com/kartiksaxena532/EasyTour/assets/92146206/4bc78f9a-8cc9-48a0-86e1-c5e9ea940f15)
+![WhatsApp Image 2023-09-24 at 01 11 49](https://github.com/kartiksaxena532/EasyTour/assets/92146206/7482e191-980f-4f01-a373-567c30203463)
+![WhatsApp Image 2023-09-24 at 01 09 09 (1)](https://github.com/kartiksaxena532/EasyTour/assets/92146206/337b3c06-4472-445c-b081-70521b8ac073)
 
 ## Color Reference
 
@@ -34,6 +41,7 @@ To run this project, you will need to add the following environment variables to
 ## Demo and Live Link
 
 ![Frame 2](https://github.com/HiLakshya/EasyTour/blob/master/assets/QREasyTour.jpg?raw=true)
+
 
 [![Video](http://img.youtube.com/vi/0VaS0zBiVt4/0.jpg)](http://www.youtube.com/watch?v=0VaS0zBiVt4)
 
