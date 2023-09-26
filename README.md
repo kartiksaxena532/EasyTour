@@ -26,10 +26,10 @@ You can add your favorite  hotels you like for future trips.
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-|Primary Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #FFFFFF |
-| Text Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) 000000 |
-| Button Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #FFA500 |
-| Chats Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #AAFF00 |
+|Primary Color | ![#FFFFFF](https://via.placeholder.com/10/0a192f?text=+) #FFFFFF |
+| Text Color | ![ 000000](https://via.placeholder.com/10/f8f8f8?text=+) 000000 |
+| Button Color | ![#FFA500](https://via.placeholder.com/10/00b48a?text=+) #FFA500 |
+| Chats Color | ![#AAFF00](https://via.placeholder.com/10/00b48a?text=+) #AAFF00 |
 
 ## Environment Variables
 
