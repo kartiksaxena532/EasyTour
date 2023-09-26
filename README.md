@@ -1,5 +1,6 @@
 # EASY TOUR
-![Frame 1](https://github.com/vaanyasharmaaa/EasyTour/assets/130481025/ce278063-b0b4-40a0-ad7f-ddf1fd3a1786)
+![Frame 1](https://github.com/kartiksaxena532/EasyTour/assets/92146206/9e7b7ffe-93d7-49e6-8616-17caa299092a)
+
 
 It is the travel buddy app built fully on react native framework.
 With real time map syncing and locating the nearest hotels,cafes,gas stations.
