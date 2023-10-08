@@ -9,6 +9,8 @@ It has a user-friendly interface as well as a user-interactive interface.
 It provides us with information on the nearest hotels, cafes, restaurants, gas stations, etc. to your nearest area.
 You can add your favorite  hotels you like for future trips.
 
+![WhatsApp Image 2023-10-08 at 19 11 13](https://github.com/kartiksaxena532/EasyTour/assets/92146206/f3ca0829-a114-4795-b506-04a33a0f1d8f)
+
 ## Features
 * In-app GPS technology
 * Virtual assistant to help you plan a trip
