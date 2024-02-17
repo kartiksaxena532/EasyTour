@@ -22,10 +22,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-       
       },
       "googleServicesFile": "./google-services.json",
-      "package":"com.tubeguruji.findplace"
+      "package": "com.tubeguruji.findplace"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,7 +35,8 @@
         {
           "locationAlwaysAndWhenInUsePermission": "Allow Explore Place to use your location."
         }
-      ]
+      ],
+      "expo-font"
     ]
   }
 }

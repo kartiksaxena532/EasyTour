@@ -11,7 +11,8 @@ const Details = () => {
 
     const handleSave = () => {
       // Save the user's profile information (e.g., to a server or storage)
-      // For simplicity, we'll just toggle the edit mode here
+      // For simplicity, we'll just toggle the edit mode here 
+      
       setIsEditing(false);
     };
     
