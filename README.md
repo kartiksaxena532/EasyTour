@@ -1,7 +1,8 @@
 # EASY TOUR
 Authentication using clerk in futre cause Clerk does not support Sdk Version greater than 47 and this 
 app is build in latest sdk 49 on 10-02-2023, 
-<img src="https://github.com/kartiksaxena532/EasyTour/assets/92146206/7ef6058b-c6a3-4f48-b301-96647e45ac1e" width ="260" height="540">
+
+<img src="https://github.com/kartiksaxena532/EasyTour/assets/92146206/7ef6058b-c6a3-4f48-b301-96647e45ac1e" width ="240" height="120">
 
 
 ![Frame 1](https://github.com/kartiksaxena532/EasyTour/assets/92146206/9e7b7ffe-93d7-49e6-8616-17caa299092a)
